@@ -29,12 +29,13 @@ const MAX_FILE_SIZE_IN_MB = 7 * 1024 ** 2; // Note that you only need to change 
 const BUCKET = process.env.BUCKET as string;
 const fileUploaderMiddleware = new FileUploaderMiddleware(ALLOWED_TYPES, MAX_FILE_SIZE_IN_MB, BUCKET);
 
-app.post('/upload/file',
+app.post(
+  '/upload/file',
   (req: Request, res: Response, next: NextFunction) => {
     return fileUploaderMiddleware.handle(req, res, next);
   },
   (req: Request, res: Response) => {
-  // Your code to handle the uploaded file.
+    // Your code to handle the uploaded file.
   },
 );
 ```
