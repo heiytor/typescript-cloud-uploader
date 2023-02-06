@@ -44,3 +44,4 @@ You can also use the FilesUploaderController to upload multiple files at once.
 **An full usage example is available in `src/sample`.**
 
 ## Response
+![file](https://user-images.githubusercontent.com/107213601/217083644-6e32a834-f4b9-4e83-815c-ebcda08975b5.png)
