@@ -21,7 +21,7 @@ A middleware for uploading files to cloud services.
 ## Usage
 To use the FileUploaderMiddleware in an Express.js or similar application, you can instantiate the class with the desired "ALLOWED_TYPES", "MAX_FILE_SIZE", and "BUCKET" properties and then use the handle method as middleware in your route. For example:
 ```javascript
-import { Request, Response, NextFunction, Router } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import { FileUploaderMiddleware } from './path/to/middleware';
 
 const ALLOWED_TYPES = ['image/png', 'image/jgp', 'image/jgep']; // Content-type here
